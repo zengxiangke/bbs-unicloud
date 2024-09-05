@@ -2,6 +2,8 @@
 import { onLaunch, onShow, onHide } from "@dcloudio/uni-app";
 onLaunch(() => {
   console.log("App Launch");
+  // @ts-ignore
+  window.__unicloud = uniCloud;
 });
 onShow(() => {
   console.log("App Show");
